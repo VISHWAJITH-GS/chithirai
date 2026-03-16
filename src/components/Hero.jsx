@@ -35,25 +35,28 @@ export default function Hero() {
       {/* Hero gradient scrim keeps text readable over the local DotGrid */}
       <div className="hero-gradient absolute inset-0 pointer-events-none" />
 
-      {/* Sithirai logo — top-left corner */}
-      <motion.img
-        src="/assets/sithirai-white-bg-logo.png"
-        alt="சித்திரை"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.3, duration: 0.6, ease: 'easeOut' }}
-        className="absolute top-24 left-5 sm:left-8 z-10 w-44 h-44 sm:w-60 sm:h-60 object-contain pointer-events-none"
-      />
+      {/* Logos container — centered at top */}
+      <div className="absolute top-12 left-1/2 -translate-x-1/2 z-10 flex items-center justify-center gap-6 sm:gap-10 pointer-events-none">
+        {/* Tamil Mandram logo */}
+        <motion.img
+          src="/assets/tamil-mandram-logo.png"
+          alt="Tamil Mandram logo"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
+          className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+        />
 
-      {/* Tamil Mandram logo — top-right corner */}
-      <motion.img
-        src="/assets/tamil-mandram-logo.png"
-        alt="Tamil Mandram logo"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.3, duration: 0.6, ease: 'easeOut' }}
-        className="absolute top-24 right-5 sm:right-8 z-10 w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-lg pointer-events-none"
-      />
+        {/* Sithirai logo — centered */}
+        <motion.img
+          src="/assets/sithirai-white-bg-logo.png"
+          alt="சித்திரை"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.3, duration: 0.6, ease: 'easeOut' }}
+          className="w-32 h-32 sm:w-44 sm:h-44 object-contain"
+        />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto py-16">
@@ -65,7 +68,7 @@ export default function Hero() {
           animate="visible"
           className="flex justify-center gap-5 mb-6"
         >
-          {['✦', '◈', '✦'].map((sym, i) => (
+          {['. ', '. ', '. '].map((sym, i) => (
             <span
               key={i}
               className="text-gold text-2xl animate-gold-pulse"
@@ -97,7 +100,7 @@ export default function Hero() {
         >
           <img
             src="/assets/tce-banner.png"
-            alt="Thiagarajar College of Engineering"
+            alt="தியாகராசர் பொறியியல் கல்லூரி"
             className="w-full max-w-3xl h-20 sm:h-24 object-cover object-center"
           />
 

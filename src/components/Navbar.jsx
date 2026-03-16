@@ -40,7 +40,7 @@ export default function Navbar() {
           className="flex flex-col items-start leading-tight"
         >
           <span className="text-[#D4AF37] font-bold text-sm sm:text-base">
-            Thiagarajar College of Engineering
+            தியாகராசர் பொறியியல் கல்லூரி (தன்னாட்சி )
           </span>
           <span className="text-[#FFF5E1] text-xs opacity-80">
             தமிழ் மன்றம் &nbsp;·&nbsp; சித்திரை
