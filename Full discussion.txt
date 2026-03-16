@@ -1,0 +1,1012 @@
+
+
+
+
+
+I am currently going to create a website for the tamil mandram for a competition shithirai. My senior sent a message.In top tce சிருட்டி கலைக் குழுமம் தமிழ் மன்றம் நடத்தும்   சித்திரை   Then oru para mari about the event   நடைபெறும் போட்டிகள்   பேச்சு  கவிதை  கட்டுரை  தமிழோடு விளையாடு    If I click one event it has to show the rules descriptios of that respectice Event Also register here potu பதிவு செய்ய nu potru  Ithelam potu oru website ready pannu...  Try to fully use AI ...will be easy.
+
+Your senior actually gave you a very simple website requirement. Don’t overcomplicate it. You can finish this in 2–3 hours using AI tools if you structure it properly.
+I’ll break it down clearly.
+1. What the Website Should Contain
+Header
+TCE சிருட்டி கலைக் குழுமம்  
+தமிழ் மன்றம் நடத்தும்  
+சித்திரை விழா
+
+Event Description (Paragraph)
+Example:
+தமிழின் செழுமையையும் படைப்பாற்றலையும் வளர்க்கும் நோக்கில் TCE சிருட்டி கலைக் குழுமம் தமிழ் மன்றம் சார்பில் “சித்திரை விழா” நடத்தப்படுகிறது. இந்த நிகழ்வில் மாணவர்களின் திறமைகளை வெளிப்படுத்த பல்வேறு போட்டிகள் நடைபெறும்.
+Events Section
+நடைபெறும் போட்டிகள்
+
+Cards / buttons for:
+பேச்சுப் போட்டி
+கவிதைப் போட்டி
+கட்டுரைப் போட்டி
+தமிழோடு விளையாடு
+When clicking each → Rules Page / Modal opens
+
+Inside Each Event
+Example:
+பேச்சுப் போட்டி
+Rules:
+நேரம்: 3–5 நிமிடங்கள்
+தலைப்பு: நிகழ்விடத்தில் வழங்கப்படும்
+தமிழ் மொழியில் மட்டுமே பேச வேண்டும்
+மதிப்பீடு: மொழி, தெளிவு, வெளிப்பாடு
+Button:
+பதிவு செய்ய
+(Register Here)
+
+2. Website Structure (Simple)
+index.html
+events.html
+speech.html
+poetry.html
+essay.html
+tamil-game.html
+style.css
+
+But honestly you don't need many pages.
+Better:
+Single Page Website
+Click → popup with rules
+
+3. Fastest Way (Use AI)
+Use one of these:
+Option 1 (Best for you)
+Use
+ChatGPT + GitHub Pages
+Prompt:
+Create a modern Tamil event website using HTML CSS and JavaScript.
+
+Header:
+"TCE சிருட்டி கலைக் குழுமம் தமிழ் மன்றம் நடத்தும் சித்திரை விழா"
+
+Add event description paragraph.
+
+Create event cards:
+1. பேச்சு
+2. கவிதை
+3. கட்டுரை
+4. தமிழோடு விளையாடு
+
+When clicking a card open a modal showing rules of the event.
+
+Add a Register Here button under rules.
+
+Design should be modern, responsive, Tamil font support.
+
+Copy the code → done.
+
+Option 2 (Even Easier)
+Use v0.dev or lovable.dev
+Just prompt:
+Create a Tamil cultural event website for Chithirai festival with event cards and registration buttons.
+
+It generates a full UI instantly.
+
+4. Page Layout Idea
+------------------------------------------------
+TCE சிருட்டி கலைக் குழுமம்
+தமிழ் மன்றம் நடத்தும்
+சித்திரை விழா
+------------------------------------------------
+
+[ About Event Paragraph ]
+
+------------------------------------------------
+நடைபெறும் போட்டிகள்
+------------------------------------------------
+
+[ பேச்சு ]  [ கவிதை ]
+
+[ கட்டுரை ]  [ தமிழோடு விளையாடு ]
+
+(click → rules popup)
+
+------------------------------------------------
+Register Now
+------------------------------------------------
+
+5. Registration
+Simplest method:
+Use Google Form.
+Button:
+பதிவு செய்ய
+
+Link → Google form.
+No backend needed.
+6. Fonts (Important for Tamil)
+Add this in HTML:
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&display=swap" rel="stylesheet">
+
+Then CSS:
+
+body{
+font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+7. Simple Event Card Example
+
+<div class="event-card" onclick="openEvent('speech')">
+பேச்சுப் போட்டி
+</div>
+
+Popup opens with rules.
+
+8. Brutal Truth (Listen Carefully)
+Don’t waste time coding everything manually.
+This is a college cultural website, not a production SaaS product.
+Your job is:
+Make it look good
+Make events clickable
+Show rules
+Add register button
+That's it.
+AI can generate 90% of the code instantly.
+9. If you want, I can also give you
+Full website code (copy-paste ready)
+Tamil content for all events
+Modern UI design
+Deployment using GitHub Pages
+Say:
+"Generate the full website"
+and I’ll build the entire thing for you.
+
+
+Chitthirai.pdf
+PDF
+THis is the pdf my senior sent. So the website covers all the infomation and the register buttons will redirect to the respective gform. The website will be traditional, every tamilian should feel a home effect in the website.
+
+I read the PDF your senior sent. The website should basically present that entire information cleanly and provide registration links for each competition. The content must match the PDF so participants trust it. 
+Also, since you want a traditional Tamil feel, the design should not look like a generic tech website. It should feel like a தமிழ் விழா poster turned into a website.
+1. Website Structure (Correct Approach)
+Make it a single-page website with sections.
+Home
+│
+├── About Chithirai Event
+│
+├── Competitions
+│     ├── கட்டுரை போட்டி
+│     ├── பேச்சு போட்டி
+│     ├── தமிழறிவு களம்
+│
+├── கவியரங்கம் (program schedule)
+│
+└── Register
+
+Each competition card → opens rules + register button.
+
+2. Homepage Content
+Header
+TCE சிருட்டி கலைக் குழுமம்  
+தமிழ் மன்றம் நடத்தும்  
+
+சித்திரை விழா
+
+Location:
+தியாகராசர் பொறியியல் கல்லூரி  
+மதுரை – 625015
+
+Time:
+காலை 10:00 – மதியம் 12:00
+(பிற கல்லூரி மாணவர்கள்)
+
+All this comes directly from the PDF. 
+
+3. About Section
+Example paragraph:
+தமிழின் செழுமையையும் மாணவர்களின் படைப்பாற்றலையும் வெளிப்படுத்தும் நோக்கில் தியாகராசர் பொறியியல் கல்லூரி தமிழ் மன்றம் சார்பில் “சித்திரை விழா” நடத்தப்படுகிறது. இந்நிகழ்வில் பல்வேறு போட்டிகள் மற்றும் கவியரங்கம் நடைபெறும்.
+4. Competitions Section
+Title:
+நடைபெறும் போட்டிகள்
+
+Cards:
+கட்டுரை போட்டி
+பேச்சு போட்டி
+தமிழறிவு களம்
+
+5. Event Details (From PDF)
+கட்டுரை போட்டி
+Topics:
+தமிழ் மொழியின் சிறப்பு
+முத்தமிழின் மகத்துவம்
+இன்றைய இளைஞர்களும் தமிழும்
+Rules:
+கொடுக்கப்பட்ட தலைப்புகளில் ஒன்றை தேர்வு செய்து எழுத வேண்டும்
+500–1000 வார்த்தைகள்
+மேற்கோள்கள் பயன்படுத்தலாம்
+Plagiarism இருக்கக்கூடாது
+நடுவர் தீர்ப்பு இறுதி
+Evaluation:
+கருத்து விவரிப்பு
+எழுத்துப்பிழையின்மை
+மொழி வளமை
+மேற்கோள்
+வாக்கிய அமைப்பு
+Register button:
+பதிவு செய்ய
+
+→ Google Form link
+All of this is directly from the PDF. 
+பேச்சுப் போட்டி
+Topics:
+தமிழின் எதிர்காலம்
+இளைஞர்களின் தமிழ்ப்பற்று
+தொழில்நுட்ப யுகத்தில் தமிழ்
+Rules:
+4–6 minutes
+தெளிவான பேச்சு
+சபை நாகரிகம்
+நடுவர் தீர்ப்பு இறுதி
+Evaluation:
+கருத்து வெளிப்பாடு
+மொழி வளமை
+மேற்கோள்
+பேச்சு அமைப்பு
+அவையோர் ஈர்ப்பு
+Register button → Google Form.
+
+தமிழறிவு களம்
+Competition Structure:
+Rounds:
+1️⃣ Basic
+தமிழ் இலக்கியம்
+இலக்கணம்
+பழமொழிகள்
+2️⃣ Intermediate
+தமிழ் வரலாறு
+சங்க இலக்கியம்
+முக்கிய ஆளுமைகள்
+3️⃣ Advanced
+சமகால தமிழ்
+மொழி வளர்ச்சி
+4️⃣ Speed Round
+Audio / Video questions
+Rules:
+பல சுற்றுகள்
+குறிப்பிட்ட நேரத்தில் பதில்
+நடுவர் தீர்ப்பு இறுதி
+
+
+6. கவியரங்கம் Section
+இடம் : KS Auditorium
+நேரம் : 2:00 – 4:00
+
+Program:
+தமிழ்த்தாய் வாழ்த்து
+முதல்வர் உரை
+வரவேற்புரை
+விருந்தினர் உரை
+மேடை கவிதை வாசிப்பு
+பரிசளிப்பு
+நன்றியுரை
+
+
+7. Traditional Design (Very Important)
+Use these design elements:
+Colors
+Maroon
+Gold
+Temple Sand
+Dark Brown
+
+Looks like temple festival theme.
+
+Fonts
+Use Tamil fonts:
+Noto Sans Tamil
+Catamaran
+Latha
+
+Background
+Use subtle patterns like:
+Kolam pattern
+Palm leaf texture
+Temple borders
+Decorations
+Add:
+🪔 kuthu vilakku icons
+Temple borders
+Thoranam decoration at top
+This will give “தமிழர் வீட்டு உணர்வு”.
+
+8. Registration System
+Do NOT build a backend.
+Just link Google Forms.
+Example:
+Essay → Gform1
+Speech → Gform2
+Quiz → Gform3
+
+Button:
+பதிவு செய்ய
+
+9. Best AI Tools for This
+Use one of these:
+v0.dev
+Best UI generator.
+Prompt:
+Create a traditional Tamil cultural event website for Chithirai festival with Tamil fonts, maroon gold theme, event cards and registration buttons.
+
+Lovable.dev
+Even easier for full site generation.
+
+ChatGPT (for code)
+Generate:
+HTML
+CSS
+JavaScript
+
+10. Deployment
+Host it on:
+GitHub Pages
+
+or
+Vercel
+
+Free.
+
+11. Reality Check
+You are an AI/ML student aiming for top placements.
+So treat this like a mini portfolio project:
+Add:
+AI assisted UI design
+Responsive website
+Clean Tamil typography
+
+If done well, it actually becomes a good GitHub project.
+
+✅ If you want, I can also give you:
+Full website code (copy-paste ready)
+Traditional Tamil UI design
+Images + decorations
+AI prompts to generate the site instantly
+Just say:
+"Generate the full Chithirai website code."
+I'll build the entire thing for you.
+
+The website should be attractive and each action will have a effect. I am going to use react for the frontend. 
+
+Good choice using React. If you do it properly, this can actually look far better than the typical college event websites. Most people just dump text on a page. You should aim for something that feels like a Tamil cultural experience, not a PDF copied to a webpage.
+Below is a clean architecture + UI ideas + tech stack for your React site.
+1. React Project Structure
+Keep it simple and scalable.
+src
+ ├── components
+ │     ├── Navbar.jsx
+ │     ├── Hero.jsx
+ │     ├── EventCard.jsx
+ │     ├── EventModal.jsx
+ │     ├── Kaviarangam.jsx
+ │     └── Footer.jsx
+ │
+ ├── pages
+ │     └── Home.jsx
+ │
+ ├── data
+ │     └── events.js
+ │
+ ├── styles
+ │     └── global.css
+ │
+ └── App.jsx
+
+This structure prevents your code from becoming a mess.
+
+2. Tech Stack (Recommended)
+Use modern tools.
+React
+Vite
+TailwindCSS
+Framer Motion
+
+Why:
+Tailwind → fast styling
+Framer Motion → animations
+Vite → faster than CRA
+3. Traditional Tamil Design Style
+Your design theme should feel like a Chithirai festival banner.
+Colors
+Maroon  (#7B1E1E)
+Gold    (#D4AF37)
+Cream   (#FFF5E1)
+Dark brown (#3E2723)
+
+These colors resemble temple festival posters.
+
+Fonts
+Use Tamil fonts.
+Add to HTML:
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&display=swap" rel="stylesheet">
+
+CSS:
+font-family: 'Noto Sans Tamil', sans-serif;
+
+4. Homepage Layout
+HERO SECTION
+Big festival banner.
+TCE சிருட்டி கலைக் குழுமம்
+தமிழ் மன்றம் நடத்தும்
+
+சித்திரை விழா
+
+Background ideas:
+temple silhouette
+kolam pattern
+kuthu vilakku lamps
+Animation ideas:
+lamps glowing
+floating flower petals
+smooth fade text
+Framer motion example:
+
+<motion.h1
+ initial={{ opacity:0, y:-50 }}
+ animate={{ opacity:1, y:0 }}
+ transition={{ duration:1 }}
+>
+சித்திரை விழா
+</motion.h1>
+
+5. Event Cards Section
+Title:
+நடைபெறும் போட்டிகள்
+
+Cards:
+கட்டுரை போட்டி
+பேச்சு போட்டி
+தமிழறிவு களம்
+கவியரங்கம்
+
+Card hover animation:
+scale up
+gold border glow
+shadow
+
+Example:
+
+<motion.div
+ whileHover={{ scale:1.08 }}
+ className="event-card"
+>
+பேச்சுப் போட்டி
+</motion.div>
+
+6. Event Details Modal
+When a user clicks an event:
+A modal popup opens.
+Example:
+பேச்சுப் போட்டி
+
+Topics
+• தமிழின் எதிர்காலம்
+• இளைஞர்களின் தமிழ்ப்பற்று
+• தொழில்நுட்ப யுகத்தில் தமிழ்
+
+Rules
+• 4–6 minutes
+• Clear speech
+• Judges decision final
+
+[ பதிவு செய்ய ]
+
+Button redirects to Google Form.
+
+7. Event Data (Keep in JSON)
+Create a data file.
+events.js
+
+export const events = [
+{
+title:"பேச்சு போட்டி",
+topics:[
+"தமிழின் எதிர்காலம்",
+"இளைஞர்களின் தமிழ்ப்பற்று",
+"தொழில்நுட்ப யுகத்தில் தமிழ்"
+],
+rules:[
+"4–6 minutes",
+"Clear speech",
+"Judges decision final"
+],
+form:"GOOGLE_FORM_LINK"
+},
+]
+
+This makes the site easier to maintain.
+
+8. Click Effects
+Make interactions satisfying.
+Examples:
+Button ripple effect
+tap animation
+
+Card hover
+scale + glow
+
+Page scroll
+fade in sections
+
+Framer motion example:
+
+<motion.div
+ initial={{opacity:0}}
+ whileInView={{opacity:1}}
+ transition={{duration:0.6}}
+>
+
+9. Tamil Cultural UI Elements
+Add subtle decorations:
+kolam divider lines
+palm leaf borders
+kuthu vilakku icons
+banana leaf patterns
+Do not overdo it or it becomes tacky.
+
+10. Registration Flow
+Button:
+பதிவு செய்ய
+
+React code:
+
+<button
+ onClick={() => window.open(event.form)}
+>
+பதிவு செய்ய
+</button>
+
+Redirect → Google Form.
+
+11. Mobile Responsiveness
+Most students will open it on mobile.
+So cards should stack:
+Desktop → 3 cards row
+Tablet → 2 cards
+Mobile → 1 card
+
+12. Deployment
+Host using:
+Vercel
+
+Fastest.
+Just connect GitHub.
+13. One Honest Suggestion
+Do NOT just copy the PDF content.
+Add:
+smooth animations
+cultural theme
+good typography
+If done well, this becomes something you can show in your portfolio / GitHub.
+Your GitHub already exists, so push this project there.
+✅ If you want, I can also show you:
+Full React + Tailwind + Framer Motion code
+Beautiful Tamil cultural UI design
+Ready-to-use component templates
+Images and decorations for the site
+Just say:
+“Generate the React website template.”
+I’ll build the entire frontend structure for you.
+
+I am going to search for some react animations from the react bits one by one. You are going to analyze it and give it to me.
+import DotGrid from './DotGrid';  <div style={{ width: '100%', height: '600px', position: 'relative' }}>   <DotGrid     dotSize={5}     gap={15}     baseColor="#271E37"     activeColor="#5227FF"     proximity={120}     shockRadius={250}     shockStrength={5}     resistance={750}     returnDuration={1.5}   /> </div>.dot-grid {
+  display: flex;   align-items: center;   justify-content: center;   height: 100%;   width: 100%;   position: relative; }  .dot-grid__wrap {   width: 100%;   height: 100%;   position: relative; }  .dot-grid__canvas {   position: absolute;   inset: 0;   width: 100%;   height: 100%;   pointer-events: none; } 
+'use client'; import { useRef, useEffect, useCallback, useMemo } from 'react'; import { gsap } from 'gsap'; import { InertiaPlugin } from 'gsap/InertiaPlugin';  import './DotGrid.css';  gsap.registerPlugin(InertiaPlugin);  const throttle = (func, limit) => {   let lastCall = 0;   return function (...args) {     const now = performance.now();     if (now - lastCall >= limit) {       lastCall = now;       func.apply(this, args);     }   }; };  function hexToRgb(hex) {   const m = hex.match(/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i);   if (!m) return { r: 0, g: 0, b: 0 };   return {     r: parseInt(m[1], 16),     g: parseInt(m[2], 16),     b: parseInt(m[3], 16)   }; }  const DotGrid = ({   dotSize = 16,   gap = 32,   baseColor = '#5227FF',   activeColor = '#5227FF',   proximity = 150,   speedTrigger = 100,   shockRadius = 250,   shockStrength = 5,   maxSpeed = 5000,   resistance = 750,   returnDuration = 1.5,   className = '',   style }) => {   const wrapperRef = useRef(null);   const canvasRef = useRef(null);   const dotsRef = useRef([]);   const pointerRef = useRef({     x: 0,     y: 0,     vx: 0,     vy: 0,     speed: 0,     lastTime: 0,     lastX: 0,     lastY: 0   });    const baseRgb = useMemo(() => hexToRgb(baseColor), [baseColor]);   const activeRgb = useMemo(() => hexToRgb(activeColor), [activeColor]);    const circlePath = useMemo(() => {     if (typeof window === 'undefined' || !window.Path2D) return null;      const p = new window.Path2D();     p.arc(0, 0, dotSize / 2, 0, Math.PI * 2);     return p;   }, [dotSize]);    const buildGrid = useCallback(() => {     const wrap = wrapperRef.current;     const canvas = canvasRef.current;     if (!wrap || !canvas) return;      const { width, height } = wrap.getBoundingClientRect();     const dpr = window.devicePixelRatio || 1;      canvas.width = width * dpr;     canvas.height = height * dpr;     canvas.style.width = ${width}px;     canvas.style.height = ${height}px;     const ctx = canvas.getContext('2d');     if (ctx) ctx.scale(dpr, dpr);      const cols = Math.floor((width + gap) / (dotSize + gap));     const rows = Math.floor((height + gap) / (dotSize + gap));     const cell = dotSize + gap;      const gridW = cell * cols - gap;     const gridH = cell * rows - gap;      const extraX = width - gridW;     const extraY = height - gridH;      const startX = extraX / 2 + dotSize / 2;     const startY = extraY / 2 + dotSize / 2;      const dots = [];     for (let y = 0; y < rows; y++) {       for (let x = 0; x < cols; x++) {         const cx = startX + x * cell;         const cy = startY + y * cell;         dots.push({ cx, cy, xOffset: 0, yOffset: 0, _inertiaApplied: false });       }     }     dotsRef.current = dots;   }, [dotSize, gap]);    useEffect(() => {     if (!circlePath) return;      let rafId;     const proxSq = proximity * proximity;      const draw = () => {       const canvas = canvasRef.current;       if (!canvas) return;       const ctx = canvas.getContext('2d');       if (!ctx) return;       ctx.clearRect(0, 0, canvas.width, canvas.height);        const { x: px, y: py } = pointerRef.current;        for (const dot of dotsRef.current) {         const ox = dot.cx + dot.xOffset;         const oy = dot.cy + dot.yOffset;         const dx = dot.cx - px;         const dy = dot.cy - py;         const dsq = dx * dx + dy * dy;          let style = baseColor;         if (dsq <= proxSq) {           const dist = Math.sqrt(dsq);           const t = 1 - dist / proximity;           const r = Math.round(baseRgb.r + (activeRgb.r - baseRgb.r) * t);           const g = Math.round(baseRgb.g + (activeRgb.g - baseRgb.g) * t);           const b = Math.round(baseRgb.b + (activeRgb.b - baseRgb.b) * t);           style = rgb(${r},${g},${b});         }          ctx.save();         ctx.translate(ox, oy);         ctx.fillStyle = style;         ctx.fill(circlePath);         ctx.restore();       }        rafId = requestAnimationFrame(draw);     };      draw();     return () => cancelAnimationFrame(rafId);   }, [proximity, baseColor, activeRgb, baseRgb, circlePath]);    useEffect(() => {     buildGrid();     let ro = null;     if ('ResizeObserver' in window) {       ro = new ResizeObserver(buildGrid);       wrapperRef.current && ro.observe(wrapperRef.current);     } else {       window.addEventListener('resize', buildGrid);     }     return () => {       if (ro) ro.disconnect();       else window.removeEventListener('resize', buildGrid);     };   }, [buildGrid]);    useEffect(() => {     const onMove = e => {       const now = performance.now();       const pr = pointerRef.current;       const dt = pr.lastTime ? now - pr.lastTime : 16;       const dx = e.clientX - pr.lastX;       const dy = e.clientY - pr.lastY;       let vx = (dx / dt) * 1000;       let vy = (dy / dt) * 1000;       let speed = Math.hypot(vx, vy);       if (speed > maxSpeed) {         const scale = maxSpeed / speed;         vx *= scale;         vy *= scale;         speed = maxSpeed;       }       pr.lastTime = now;       pr.lastX = e.clientX;       pr.lastY = e.clientY;       pr.vx = vx;       pr.vy = vy;       pr.speed = speed;        const rect = canvasRef.current.getBoundingClientRect();       pr.x = e.clientX - rect.left;       pr.y = e.clientY - rect.top;        for (const dot of dotsRef.current) {         const dist = Math.hypot(dot.cx - pr.x, dot.cy - pr.y);         if (speed > speedTrigger && dist < proximity && !dot._inertiaApplied) {           dot._inertiaApplied = true;           gsap.killTweensOf(dot);           const pushX = dot.cx - pr.x + vx * 0.005;           const pushY = dot.cy - pr.y + vy * 0.005;           gsap.to(dot, {             inertia: { xOffset: pushX, yOffset: pushY, resistance },             onComplete: () => {               gsap.to(dot, {                 xOffset: 0,                 yOffset: 0,                 duration: returnDuration,                 ease: 'elastic.out(1,0.75)'               });               dot._inertiaApplied = false;             }           });         }       }     };      const onClick = e => {       const rect = canvasRef.current.getBoundingClientRect();       const cx = e.clientX - rect.left;       const cy = e.clientY - rect.top;       for (const dot of dotsRef.current) {         const dist = Math.hypot(dot.cx - cx, dot.cy - cy);         if (dist < shockRadius && !dot._inertiaApplied) {           dot._inertiaApplied = true;           gsap.killTweensOf(dot);           const falloff = Math.max(0, 1 - dist / shockRadius);           const pushX = (dot.cx - cx) * shockStrength * falloff;           const pushY = (dot.cy - cy) * shockStrength * falloff;           gsap.to(dot, {             inertia: { xOffset: pushX, yOffset: pushY, resistance },             onComplete: () => {               gsap.to(dot, {                 xOffset: 0,                 yOffset: 0,                 duration: returnDuration,                 ease: 'elastic.out(1,0.75)'               });               dot._inertiaApplied = false;             }           });         }       }     };      const throttledMove = throttle(onMove, 50);     window.addEventListener('mousemove', throttledMove, { passive: true });     window.addEventListener('click', onClick);      return () => {       window.removeEventListener('mousemove', throttledMove);       window.removeEventListener('click', onClick);     };   }, [maxSpeed, speedTrigger, proximity, resistance, returnDuration, shockRadius, shockStrength]);    return (     <section className={dot-grid ${className}} style={style}>       <div ref={wrapperRef} className="dot-grid__wrap">         <canvas ref={canvasRef} className="dot-grid__canvas" />       </div>     </section>   ); };  export default DotGrid; 
+
+
+this is for the cursor movement.
+
+This animation is basically a mouse-interactive particle grid background. When the cursor moves, nearby dots change color and get pushed away with inertia, and when you click it creates a shockwave effect. It’s a strong hero background animation.
+But before using it, you need to understand what it does, where to use it, and what to modify. Otherwise it will either look out of place or kill performance.
+1. What This Animation Actually Does
+Your component DotGrid:
+Draws hundreds of dots on a canvas
+Detects cursor proximity
+Changes color when cursor approaches
+Applies GSAP inertia physics
+Creates shockwave on click
+Interaction Effects
+Mouse movement
+→ nearby dots shift and glow
+Fast cursor movement
+→ dots scatter slightly
+Mouse click
+→ circular shockwave
+This makes the page feel alive and reactive.
+2. Where You Should Use It in Your Website
+Use this ONLY in the hero section background.
+Example layout:
+-----------------------------------
+DOT GRID BACKGROUND
+
+TCE தமிழ் மன்றம்
+
+சித்திரை விழா
+
+[ நிகழ்வுகளை பார்க்க ]
+-----------------------------------
+
+Do NOT use it behind text-heavy sections.
+Reason:
+moving backgrounds + lots of text = bad readability
+
+3. Install Required Libraries
+Your code requires GSAP + InertiaPlugin.
+Install GSAP:
+
+npm install gsap
+
+Important reality:
+⚠️ InertiaPlugin is a premium GSAP plugin.
+Your code imports:
+gsap/InertiaPlugin
+
+Without Club GSAP it will break in production.
+Fix
+Replace inertia with standard easing animation if needed.
+
+4. How to Integrate in React (Correct Way)
+Create:
+src/components/DotGrid.jsx
+src/components/DotGrid.css
+
+Then import in Hero section.
+Example:
+
+import DotGrid from "../components/DotGrid";
+
+export default function Hero() {
+  return (
+    <div style={{ width: "100%", height: "600px", position: "relative" }}>
+      
+      <DotGrid
+        dotSize={5}
+        gap={15}
+        baseColor="#5A3A1B"
+        activeColor="#D4AF37"
+        proximity={120}
+        shockRadius={250}
+        shockStrength={5}
+        resistance={750}
+        returnDuration={1.5}
+      />
+
+      <div className="hero-text">
+        <h1>சித்திரை விழா</h1>
+      </div>
+
+    </div>
+  );
+}
+
+5. Colors You Should Use (For Tamil Theme)
+Your current colors:
+baseColor="#271E37"
+activeColor="#5227FF"
+
+These look tech / neon style.
+That does NOT match a Tamil cultural festival.
+Use something like:
+baseColor="#5A3A1B"   // dark temple brown
+activeColor="#D4AF37" // gold
+
+Now it looks like temple lamps glowing.
+
+6. Important Performance Warning
+This animation renders hundreds of dots per frame.
+If you use:
+dotSize=5
+gap=15
+
+You might generate 1500+ particles.
+That can lag on phones.
+Safer values
+dotSize = 6
+gap = 22
+
+This reduces particles by almost 50%.
+
+7. Parameters Explained
+dotSize
+Size of each dot.
+dotSize={5}
+
+Smaller = more elegant.
+
+gap
+Distance between dots.
+gap={15}
+
+Lower gap = more particles.
+
+proximity
+Distance where dots react to cursor.
+proximity={120}
+
+Higher = larger interaction radius.
+
+shockRadius
+Click explosion radius.
+shockRadius={250}
+
+shockStrength
+Explosion intensity.
+shockStrength={5}
+
+resistance
+Controls inertia friction.
+resistance={750}
+
+Higher = slower return.
+
+returnDuration
+How fast dots return.
+returnDuration={1.5}
+
+8. CSS Explanation
+Your CSS simply creates a canvas container.
+.dot-grid
+
+centers the canvas.
+.dot-grid__canvas
+
+makes canvas cover the entire container.
+Also note:
+pointer-events: none;
+
+This prevents the canvas from blocking clicks.
+Good decision.
+9. One Improvement You Should Add
+Add opacity fade near edges so it blends with the page.
+Example:
+mask-image: radial-gradient(circle, white 60%, transparent 100%);
+
+This makes it look more professional.
+
+10. Final Verdict
+This animation is good, but:
+Pros
+modern
+interactive
+visually impressive
+good for hero background
+Cons
+can lag on mobile
+GSAP inertia plugin issue
+needs color change for cultural theme
+11. Honest Advice
+Most college event sites look like PowerPoint slides online.
+If you combine:
+this interactive background
+traditional Tamil theme
+smooth page animations
+Your site will easily look 10× better than typical college event sites.
+
+If you want, I can also show you 3 React animations that will make this website insanely attractive:
+1️⃣ Floating kolam background animation
+2️⃣ Event cards with 3D hover tilt
+3️⃣ Lamp flame flicker animation
+Those three together will make the site feel like an actual Tamil festival website instead of a tech page.
+
+import CircularGallery from './CircularGallery'
+
+<div style={{ height: '600px', position: 'relative' }}>
+  <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}
+  bend={1}
+  borderRadius={0.05}
+  scrollSpeed={2}
+  scrollEase={0.05}
+/>
+
+</div>.circular-gallery {
+.circular-gallery {   width: 100%;   height: 100%;   overflow: hidden;   cursor: grab; }  .circular-gallery:active {   cursor: grabbing; } 
+  width: 100%;   height: 100%;   overflow: hidden;   cursor: grab; }  .circular-gallery:active {   cursor: grabbing; } import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl';
+.circular-gallery {   width: 100%;   height: 100%;   overflow: hidden;   cursor: grab; }  .circular-gallery:active {   cursor: grabbing; } 
+import { useEffect, useRef } from 'react';  import './CircularGallery.css';  function debounce(func, wait) {   let timeout;   return function (...args) {     clearTimeout(timeout);     timeout = setTimeout(() => func.apply(this, args), wait);   }; }  function lerp(p1, p2, t) {   return p1 + (p2 - p1) * t; }  function autoBind(instance) {   const proto = Object.getPrototypeOf(instance);   Object.getOwnPropertyNames(proto).forEach(key => {     if (key !== 'constructor' && typeof instance[key] === 'function') {       instance[key] = instance[key].bind(instance);     }   }); }  function createTextTexture(gl, text, font = 'bold 30px monospace', color = 'black') {   const canvas = document.createElement('canvas');   const context = canvas.getContext('2d');   context.font = font;   const metrics = context.measureText(text);   const textWidth = Math.ceil(metrics.width);   const textHeight = Math.ceil(parseInt(font, 10) * 1.2);   canvas.width = textWidth + 20;   canvas.height = textHeight + 20;   context.font = font;   context.fillStyle = color;   context.textBaseline = 'middle';   context.textAlign = 'center';   context.clearRect(0, 0, canvas.width, canvas.height);   context.fillText(text, canvas.width / 2, canvas.height / 2);   const texture = new Texture(gl, { generateMipmaps: false });   texture.image = canvas;   return { texture, width: canvas.width, height: canvas.height }; }  class Title {   constructor({ gl, plane, renderer, text, textColor = '#545050', font = '30px sans-serif' }) {     autoBind(this);     this.gl = gl;     this.plane = plane;     this.renderer = renderer;     this.text = text;     this.textColor = textColor;     this.font = font;     this.createMesh();   }   createMesh() {     const { texture, width, height } = createTextTexture(this.gl, this.text, this.font, this.textColor);     const geometry = new Plane(this.gl);     const program = new Program(this.gl, {       vertex:          attribute vec3 position;         attribute vec2 uv;         uniform mat4 modelViewMatrix;         uniform mat4 projectionMatrix;         varying vec2 vUv;         void main() {           vUv = uv;           gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);         }       ,       fragment:          precision highp float;         uniform sampler2D tMap;         varying vec2 vUv;         void main() {           vec4 color = texture2D(tMap, vUv);           if (color.a < 0.1) discard;           gl_FragColor = color;         }       ,       uniforms: { tMap: { value: texture } },       transparent: true     });     this.mesh = new Mesh(this.gl, { geometry, program });     const aspect = width / height;     const textHeight = this.plane.scale.y * 0.15;     const textWidth = textHeight * aspect;     this.mesh.scale.set(textWidth, textHeight, 1);     this.mesh.position.y = -this.plane.scale.y * 0.5 - textHeight * 0.5 - 0.05;     this.mesh.setParent(this.plane);   } }  class Media {   constructor({     geometry,     gl,     image,     index,     length,     renderer,     scene,     screen,     text,     viewport,     bend,     textColor,     borderRadius = 0,     font   }) {     this.extra = 0;     this.geometry = geometry;     this.gl = gl;     this.image = image;     this.index = index;     this.length = length;     this.renderer = renderer;     this.scene = scene;     this.screen = screen;     this.text = text;     this.viewport = viewport;     this.bend = bend;     this.textColor = textColor;     this.borderRadius = borderRadius;     this.font = font;     this.createShader();     this.createMesh();     this.createTitle();     this.onResize();   }   createShader() {     const texture = new Texture(this.gl, {       generateMipmaps: true     });     this.program = new Program(this.gl, {       depthTest: false,       depthWrite: false,       vertex:          precision highp float;         attribute vec3 position;         attribute vec2 uv;         uniform mat4 modelViewMatrix;         uniform mat4 projectionMatrix;         uniform float uTime;         uniform float uSpeed;         varying vec2 vUv;         void main() {           vUv = uv;           vec3 p = position;           p.z = (sin(p.x * 4.0 + uTime) * 1.5 + cos(p.y * 2.0 + uTime) * 1.5) * (0.1 + uSpeed * 0.5);           gl_Position = projectionMatrix * modelViewMatrix * vec4(p, 1.0);         }       ,       fragment:          precision highp float;         uniform vec2 uImageSizes;         uniform vec2 uPlaneSizes;         uniform sampler2D tMap;         uniform float uBorderRadius;         varying vec2 vUv;                  float roundedBoxSDF(vec2 p, vec2 b, float r) {           vec2 d = abs(p) - b;           return length(max(d, vec2(0.0))) + min(max(d.x, d.y), 0.0) - r;         }                  void main() {           vec2 ratio = vec2(             min((uPlaneSizes.x / uPlaneSizes.y) / (uImageSizes.x / uImageSizes.y), 1.0),             min((uPlaneSizes.y / uPlaneSizes.x) / (uImageSizes.y / uImageSizes.x), 1.0)           );           vec2 uv = vec2(             vUv.x * ratio.x + (1.0 - ratio.x) * 0.5,             vUv.y * ratio.y + (1.0 - ratio.y) * 0.5           );           vec4 color = texture2D(tMap, uv);                      float d = roundedBoxSDF(vUv - 0.5, vec2(0.5 - uBorderRadius), uBorderRadius);                      // Smooth antialiasing for edges           float edgeSmooth = 0.002;           float alpha = 1.0 - smoothstep(-edgeSmooth, edgeSmooth, d);                      gl_FragColor = vec4(color.rgb, alpha);         }       ,       uniforms: {         tMap: { value: texture },         uPlaneSizes: { value: [0, 0] },         uImageSizes: { value: [0, 0] },         uSpeed: { value: 0 },         uTime: { value: 100 * Math.random() },         uBorderRadius: { value: this.borderRadius }       },       transparent: true     });     const img = new Image();     img.crossOrigin = 'anonymous';     img.src = this.image;     img.onload = () => {       texture.image = img;       this.program.uniforms.uImageSizes.value = [img.naturalWidth, img.naturalHeight];     };   }   createMesh() {     this.plane = new Mesh(this.gl, {       geometry: this.geometry,       program: this.program     });     this.plane.setParent(this.scene);   }   createTitle() {     this.title = new Title({       gl: this.gl,       plane: this.plane,       renderer: this.renderer,       text: this.text,       textColor: this.textColor,       fontFamily: this.font     });   }   update(scroll, direction) {     this.plane.position.x = this.x - scroll.current - this.extra;      const x = this.plane.position.x;     const H = this.viewport.width / 2;      if (this.bend === 0) {       this.plane.position.y = 0;       this.plane.rotation.z = 0;     } else {       const B_abs = Math.abs(this.bend);       const R = (H * H + B_abs * B_abs) / (2 * B_abs);       const effectiveX = Math.min(Math.abs(x), H);        const arc = R - Math.sqrt(R * R - effectiveX * effectiveX);       if (this.bend > 0) {         this.plane.position.y = -arc;         this.plane.rotation.z = -Math.sign(x) * Math.asin(effectiveX / R);       } else {         this.plane.position.y = arc;         this.plane.rotation.z = Math.sign(x) * Math.asin(effectiveX / R);       }     }      this.speed = scroll.current - scroll.last;     this.program.uniforms.uTime.value += 0.04;     this.program.uniforms.uSpeed.value = this.speed;      const planeOffset = this.plane.scale.x / 2;     const viewportOffset = this.viewport.width / 2;     this.isBefore = this.plane.position.x + planeOffset < -viewportOffset;     this.isAfter = this.plane.position.x - planeOffset > viewportOffset;     if (direction === 'right' && this.isBefore) {       this.extra -= this.widthTotal;       this.isBefore = this.isAfter = false;     }     if (direction === 'left' && this.isAfter) {       this.extra += this.widthTotal;       this.isBefore = this.isAfter = false;     }   }   onResize({ screen, viewport } = {}) {     if (screen) this.screen = screen;     if (viewport) {       this.viewport = viewport;       if (this.plane.program.uniforms.uViewportSizes) {         this.plane.program.uniforms.uViewportSizes.value = [this.viewport.width, this.viewport.height];       }     }     this.scale = this.screen.height / 1500;     this.plane.scale.y = (this.viewport.height * (900 * this.scale)) / this.screen.height;     this.plane.scale.x = (this.viewport.width * (700 * this.scale)) / this.screen.width;     this.plane.program.uniforms.uPlaneSizes.value = [this.plane.scale.x, this.plane.scale.y];     this.padding = 2;     this.width = this.plane.scale.x + this.padding;     this.widthTotal = this.width * this.length;     this.x = this.width * this.index;   } }  class App {   constructor(     container,     {       items,       bend,       textColor = '#ffffff',       borderRadius = 0,       font = 'bold 30px Figtree',       scrollSpeed = 2,       scrollEase = 0.05     } = {}   ) {     document.documentElement.classList.remove('no-js');     this.container = container;     this.scrollSpeed = scrollSpeed;     this.scroll = { ease: scrollEase, current: 0, target: 0, last: 0 };     this.onCheckDebounce = debounce(this.onCheck, 200);     this.createRenderer();     this.createCamera();     this.createScene();     this.onResize();     this.createGeometry();     this.createMedias(items, bend, textColor, borderRadius, font);     this.update();     this.addEventListeners();   }   createRenderer() {     this.renderer = new Renderer({       alpha: true,       antialias: true,       dpr: Math.min(window.devicePixelRatio || 1, 2)     });     this.gl = this.renderer.gl;     this.gl.clearColor(0, 0, 0, 0);     this.container.appendChild(this.gl.canvas);   }   createCamera() {     this.camera = new Camera(this.gl);     this.camera.fov = 45;     this.camera.position.z = 20;   }   createScene() {     this.scene = new Transform();   }   createGeometry() {     this.planeGeometry = new Plane(this.gl, {       heightSegments: 50,       widthSegments: 100     });   }   createMedias(items, bend = 1, textColor, borderRadius, font) {     const defaultItems = [       { image: https://picsum.photos/seed/1/800/600?grayscale, text: 'Bridge' },       { image: https://picsum.photos/seed/2/800/600?grayscale, text: 'Desk Setup' },       { image: https://picsum.photos/seed/3/800/600?grayscale, text: 'Waterfall' },       { image: https://picsum.photos/seed/4/800/600?grayscale, text: 'Strawberries' },       { image: https://picsum.photos/seed/5/800/600?grayscale, text: 'Deep Diving' },       { image: https://picsum.photos/seed/16/800/600?grayscale, text: 'Train Track' },       { image: https://picsum.photos/seed/17/800/600?grayscale, text: 'Santorini' },       { image: https://picsum.photos/seed/8/800/600?grayscale, text: 'Blurry Lights' },       { image: https://picsum.photos/seed/9/800/600?grayscale, text: 'New York' },       { image: https://picsum.photos/seed/10/800/600?grayscale, text: 'Good Boy' },       { image: https://picsum.photos/seed/21/800/600?grayscale, text: 'Coastline' },       { image: https://picsum.photos/seed/12/800/600?grayscale, text: 'Palm Trees' }     ];     const galleryItems = items && items.length ? items : defaultItems;     this.mediasImages = galleryItems.concat(galleryItems);     this.medias = this.mediasImages.map((data, index) => {       return new Media({         geometry: this.planeGeometry,         gl: this.gl,         image: data.image,         index,         length: this.mediasImages.length,         renderer: this.renderer,         scene: this.scene,         screen: this.screen,         text: data.text,         viewport: this.viewport,         bend,         textColor,         borderRadius,         font       });     });   }   onTouchDown(e) {     this.isDown = true;     this.scroll.position = this.scroll.current;     this.start = e.touches ? e.touches[0].clientX : e.clientX;   }   onTouchMove(e) {     if (!this.isDown) return;     const x = e.touches ? e.touches[0].clientX : e.clientX;     const distance = (this.start - x) * (this.scrollSpeed * 0.025);     this.scroll.target = this.scroll.position + distance;   }   onTouchUp() {     this.isDown = false;     this.onCheck();   }   onWheel(e) {     const delta = e.deltaY || e.wheelDelta || e.detail;     this.scroll.target += (delta > 0 ? this.scrollSpeed : -this.scrollSpeed) * 0.2;     this.onCheckDebounce();   }   onCheck() {     if (!this.medias || !this.medias[0]) return;     const width = this.medias[0].width;     const itemIndex = Math.round(Math.abs(this.scroll.target) / width);     const item = width * itemIndex;     this.scroll.target = this.scroll.target < 0 ? -item : item;   }   onResize() {     this.screen = {       width: this.container.clientWidth,       height: this.container.clientHeight     };     this.renderer.setSize(this.screen.width, this.screen.height);     this.camera.perspective({       aspect: this.screen.width / this.screen.height     });     const fov = (this.camera.fov * Math.PI) / 180;     const height = 2 * Math.tan(fov / 2) * this.camera.position.z;     const width = height * this.camera.aspect;     this.viewport = { width, height };     if (this.medias) {       this.medias.forEach(media => media.onResize({ screen: this.screen, viewport: this.viewport }));     }   }   update() {     this.scroll.current = lerp(this.scroll.current, this.scroll.target, this.scroll.ease);     const direction = this.scroll.current > this.scroll.last ? 'right' : 'left';     if (this.medias) {       this.medias.forEach(media => media.update(this.scroll, direction));     }     this.renderer.render({ scene: this.scene, camera: this.camera });     this.scroll.last = this.scroll.current;     this.raf = window.requestAnimationFrame(this.update.bind(this));   }   addEventListeners() {     this.boundOnResize = this.onResize.bind(this);     this.boundOnWheel = this.onWheel.bind(this);     this.boundOnTouchDown = this.onTouchDown.bind(this);     this.boundOnTouchMove = this.onTouchMove.bind(this);     this.boundOnTouchUp = this.onTouchUp.bind(this);     window.addEventListener('resize', this.boundOnResize);     window.addEventListener('mousewheel', this.boundOnWheel);     window.addEventListener('wheel', this.boundOnWheel);     window.addEventListener('mousedown', this.boundOnTouchDown);     window.addEventListener('mousemove', this.boundOnTouchMove);     window.addEventListener('mouseup', this.boundOnTouchUp);     window.addEventListener('touchstart', this.boundOnTouchDown);     window.addEventListener('touchmove', this.boundOnTouchMove);     window.addEventListener('touchend', this.boundOnTouchUp);   }   destroy() {     window.cancelAnimationFrame(this.raf);     window.removeEventListener('resize', this.boundOnResize);     window.removeEventListener('mousewheel', this.boundOnWheel);     window.removeEventListener('wheel', this.boundOnWheel);     window.removeEventListener('mousedown', this.boundOnTouchDown);     window.removeEventListener('mousemove', this.boundOnTouchMove);     window.removeEventListener('mouseup', this.boundOnTouchUp);     window.removeEventListener('touchstart', this.boundOnTouchDown);     window.removeEventListener('touchmove', this.boundOnTouchMove);     window.removeEventListener('touchend', this.boundOnTouchUp);     if (this.renderer && this.renderer.gl && this.renderer.gl.canvas.parentNode) {       this.renderer.gl.canvas.parentNode.removeChild(this.renderer.gl.canvas);     }   } }  export default function CircularGallery({   items,   bend = 3,   textColor = '#ffffff',   borderRadius = 0.05,   font = 'bold 30px Figtree',   scrollSpeed = 2,   scrollEase = 0.05 }) {   const containerRef = useRef(null);   useEffect(() => {     const app = new App(containerRef.current, { items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase });     return () => {       app.destroy();     };   }, [items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase]);   return <div className="circular-gallery" ref={containerRef} />; } 
+
+this is the llsit for the competiton showing. 
+
+This component is a WebGL curved scrolling gallery built using OGL (WebGL library). It’s not a simple React animation — it’s basically a mini 3D engine rendering image planes that bend in an arc and move with scroll/drag.
+Used correctly, it can look very impressive. Used incorrectly, it becomes unnecessary complexity. So let’s break it down properly.
+1. What This Animation Does
+Your CircularGallery renders:
+Images as WebGL planes
+Arranged in a curved arc (circular illusion)
+Scroll or drag → gallery moves
+Images warp slightly with movement
+Each image has text title below it
+Interaction:
+mouse wheel → scroll
+drag → move gallery
+items wrap infinitely
+Visually it looks like:
+        [Speech]
+
+  [Essay]       [Quiz]
+
+        [Poetry]
+
+Curved like a carousel arc.
+
+2. Why It’s Actually Good for Your Site
+You said this will show competitions.
+That’s exactly where this works well.
+Instead of boring cards like:
+[ Essay ]
+[ Speech ]
+[ Quiz ]
+
+You get an interactive gallery.
+Users can drag through competitions.
+3. How You Should Structure the Competition Items
+Replace the placeholder images:
+
+https://picsum.photos
+
+with actual competition visuals.
+Example:
+
+const items = [
+{
+image: "/events/essay.jpg",
+text: "கட்டுரை போட்டி"
+},
+{
+image: "/events/speech.jpg",
+text: "பேச்சு போட்டி"
+},
+{
+image: "/events/quiz.jpg",
+text: "தமிழறிவு களம்"
+},
+{
+image: "/events/kavi.jpg",
+text: "கவியரங்கம்"
+}
+]
+
+Then:
+
+<CircularGallery items={items} />
+
+4. Important Change You Must Make
+Currently it only displays items.
+But for your website you need:
+Click → open rules modal
+
+So add click event to planes.
+Inside Media.createMesh() you need pointer detection.
+Simpler approach:
+Wrap it with an overlay click system in React.
+Example concept:
+
+const handleEventClick = (eventName) => {
+  setSelectedEvent(eventName)
+  setModalOpen(true)
+}
+
+Then show modal with rules.
+
+5. Parameter Explanation
+bend
+Controls arc curvature.
+bend = 0 → flat row
+bend = 1 → slight arc
+bend = 3 → strong curve
+
+For your site use:
+bend = 1.2
+
+Too much bend looks gimmicky.
+
+scrollSpeed
+How fast gallery moves.
+scrollSpeed={2}
+
+Good value.
+
+scrollEase
+Smoothness of motion.
+scrollEase={0.05}
+
+Lower = smoother.
+
+borderRadius
+Rounded image corners.
+borderRadius={0.05}
+
+Looks modern.
+
+textColor
+Color of event titles.
+For Tamil theme use:
+#D4AF37
+
+Gold.
+
+6. Critical Performance Warning
+This uses:
+WebGL + shaders + dynamic meshes
+
+On desktop → fine.
+On weak phones → can lag.
+Solution:
+Limit number of items.
+max 4–6 events
+
+Luckily you only have:
+Essay
+Speech
+Quiz
+Kaviarangam
+Perfect.
+
+7. Where This Section Should Be Placed
+Correct layout:
+Hero Section
+    ↓
+About Chithirai
+    ↓
+Competition Gallery  ← this component
+    ↓
+Event Rules Modal
+    ↓
+Register Buttons
+
+Do NOT put it above the hero.
+
+8. Visual Improvement for Tamil Theme
+Right now it looks modern tech style.
+To make it cultural:
+Use backgrounds like:
+Palm leaf texture
+Temple stone texture
+Kolam patterns
+
+Competition images could be:
+Palm-leaf manuscript → Essay
+Microphone → Speech
+Tamil letters → Quiz
+Palm-leaf poetry → Kaviarangam
+
+9. One Code Bug You Have
+In your JSX you duplicated props:
+bend={3}
+bend={1}
+
+React will only use the last one.
+Correct usage:
+
+<CircularGallery
+  bend={1}
+  borderRadius={0.05}
+  scrollSpeed={2}
+  scrollEase={0.05}
+/>
+
+10. One UX Improvement (Important)
+Add center focus effect.
+Currently all items look equal.
+Better design:
+center item → larger
+side items → smaller
+
+This guides users where to click.
+
+11. Honest Verdict
+This animation is:
+Technically impressive
+but
+slightly overengineered for a college event site.
+However, if you combine:
+DotGrid hero background
+CircularGallery competitions
+Smooth modal transitions
+Your site will look far more polished than typical college sites.
+
+✅ If you want, I can also show you one killer improvement:
+A “Temple Lamp hover animation” for each competition card that lights up when the user focuses on it.
+That would match the Tamil festival theme perfectly and make the site feel culturally authentic instead of just a tech demo.

@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Global Reset & Base ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans Tamil', sans-serif;
+  background-color: #FFF5E1;
+  color: #3E2723;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Custom Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF5E1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8962c;
+}
+
+/* ─── Gold Divider ─── */
+.gold-divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #D4AF37 30%, #D4AF37 70%, transparent);
+  margin: 0.5rem 0;
+}
+
+/* ─── Section Title Style ─── */
+.section-title {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: #3E2723;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* ─── Kolam / Decorative border pattern ─── */
+.kolam-border {
+  border: 2px solid #D4AF37;
+  position: relative;
+}
+.kolam-border::before {
+  content: '✦';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFF5E1;
+  padding: 0 8px;
+  color: #D4AF37;
+  font-size: 14px;
+}
+
+/* ─── Hero gradient overlay ─── */
+.hero-gradient {
+  background: radial-gradient(ellipse at 50% 60%, rgba(255, 245, 225, 0.74) 28%, rgba(255, 245, 225, 0.26) 68%, transparent 100%);
+}
+
+/* ─── CircularGallery canvas container ─── */
+.gallery-canvas-wrap {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  cursor: grab;
+}
+.gallery-canvas-wrap:active {
+  cursor: grabbing;
+}
+.gallery-canvas-wrap canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ─── Event card labels (DOM overlay on WebGL) ─── */
+.gallery-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  overflow: hidden;
+}
+
+/* ─── Modal Overlay ─── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(62, 39, 35, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* ─── Kaviarangam timeline ─── */
+.kavi-timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  padding-bottom: 1.25rem;
+}
+.kavi-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  bottom: -6px;
+  width: 2px;
+  background: linear-gradient(to bottom, #D4AF37, transparent);
+}
+.kavi-timeline-item:last-child::before {
+  display: none;
+}
+.kavi-timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #D4AF37;
+  border: 3px solid #FFF5E1;
+  box-shadow: 0 0 0 2px #D4AF37;
+}
+
+/* ─── Pulse animation for decorations ─── */
+@keyframes pulse-gold {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.animate-gold-pulse {
+  animation: pulse-gold 2.5s ease-in-out infinite;
+}
+
+/* ─── Tamil decorative text shimmer ─── */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.text-shimmer {
+  background: linear-gradient(90deg, #D4AF37 25%, #fffbe6 50%, #D4AF37 75%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+/* ─── Smooth entrance ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fadeUp 0.7s ease forwards;
+}
