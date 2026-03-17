@@ -4,12 +4,15 @@ import Hero from './components/Hero';
 import EventsSection from './components/EventsSection';
 import EventModal from './components/EventModal';
 import Kaviarangam from './components/Kaviarangam';
+import MouseTrailEffect from './components/MouseTrailEffect';
 
 export default function App() {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   return (
     <div className="min-h-screen bg-parchment font-tamil relative">
+      <MouseTrailEffect />
+
       {/* Fixed Navigation */}
       <Navbar />
 

@@ -80,7 +80,7 @@ function TimelineCard() {
         rotateY,
         transformPerspective: '900px',
       }}
-      className="relative overflow-hidden rounded-2xl border border-[#D4AF37]/20 px-6 py-6 cursor-default"
+      className="relative overflow-hidden rounded-2xl border border-[#D4AF37]/20 px-6 py-6 cursor-default no-mouse-trail"
       /* Semi-transparent bg so the section bg shows through */
       /* We keep the dark card bg intact */
     >
