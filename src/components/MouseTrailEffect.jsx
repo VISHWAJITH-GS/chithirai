@@ -28,9 +28,8 @@ export default function MouseTrailEffect() {
     }
 
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const hasFinePointer = window.matchMedia('(pointer: fine)').matches;
 
-    if (prefersReducedMotion || !hasFinePointer) {
+    if (prefersReducedMotion) {
       return undefined;
     }
 
@@ -164,17 +163,50 @@ export default function MouseTrailEffect() {
       spawnClickBurst(event.clientX, event.clientY);
     };
 
+    const onTouchStart = (event) => {
+      const touch = event.touches?.[0];
+      if (!touch) {
+        return;
+      }
+
+      if (isInsideExcludedZone(event.target)) {
+        return;
+      }
+
+      spawnClickBurst(touch.clientX, touch.clientY);
+    };
+
+    const onTouchMove = (event) => {
+      const touch = event.touches?.[0];
+      if (!touch) {
+        return;
+      }
+
+      if (isInsideExcludedZone(event.target)) {
+        return;
+      }
+
+      // Keep touch trail lighter than mouse to avoid dense particles while scrolling.
+      if (Math.random() > 0.75) {
+        spawnMoveTrail(touch.clientX, touch.clientY);
+      }
+    };
+
     resize();
     draw();
 
     window.addEventListener('resize', resize);
     window.addEventListener('mousemove', onMouseMove, { passive: true });
     window.addEventListener('mousedown', onMouseDown);
+    window.addEventListener('touchstart', onTouchStart, { passive: true });
+    window.addEventListener('touchmove', onTouchMove, { passive: true });
 
     return () => {
       window.removeEventListener('resize', resize);
       window.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('mousedown', onMouseDown);
+      window.removeEventListener('touchstart', onTouchStart);
+      window.removeEventListener('touchmove', onTouchMove);
       window.cancelAnimationFrame(animationFrameId);
     };
   }, []);

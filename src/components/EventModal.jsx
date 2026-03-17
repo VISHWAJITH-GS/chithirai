@@ -185,14 +185,14 @@ export default function EventModal({ event, onClose }) {
 
               <motion.div variants={sectionVariants} className="gold-divider" />
 
-              <motion.div variants={sectionVariants} className="sticky bottom-0 bg-gradient-to-t from-[#FFF5E1] via-[#FFF5E1] to-transparent pt-3 pb-1 -mx-1 px-1 flex justify-center md:justify-start">
+              <motion.div variants={sectionVariants} className="sticky bottom-0 z-10 bg-gradient-to-t from-[#FFF5E1] via-[#FFF5E1] to-transparent pt-4 pb-6 md:pb-2 -mx-1 px-1 flex justify-center md:justify-start">
                 <motion.a
                   href={event.formUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.04, x: 3 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#3E2723] font-bold text-base px-8 py-3.5 rounded-xl shadow-lg hover:bg-[#c9a530] transition-colors duration-200"
+                  className="w-full md:w-auto inline-flex items-center justify-center md:justify-start gap-2 bg-[#D4AF37] text-[#3E2723] font-bold text-base px-8 py-3.5 rounded-xl shadow-lg hover:bg-[#c9a530] transition-colors duration-200"
                 >
                   <span>பதிவு செய்ய</span>
                   <svg
