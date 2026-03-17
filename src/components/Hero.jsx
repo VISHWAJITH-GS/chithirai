@@ -35,7 +35,7 @@ export default function Hero() {
       <div className="hero-gradient absolute inset-0 pointer-events-none" />
 
       {/* Logos container — centered at top */}
-      <div className="relative z-10 mt-4 sm:mt-0 sm:absolute sm:top-12 sm:left-1/2 sm:-translate-x-1/2 flex items-center justify-center gap-4 sm:gap-10 pointer-events-none">
+      <div className="relative z-10 mt-1 sm:mt-0 sm:absolute sm:top-12 sm:left-1/2 sm:-translate-x-1/2 flex items-center justify-center gap-0 sm:gap-10 pointer-events-none">
         {/* Tamil Mandram logo */}
         <motion.img
           src="/assets/tamil-mandram-logo.png"
@@ -43,7 +43,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
-          className="w-12 h-12 sm:w-20 sm:h-20 object-contain"
+          className="w-24 h-24 sm:w-20 sm:h-20 object-contain"
         />
 
         {/* Sithirai logo — centered */}
@@ -53,12 +53,12 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6, ease: 'easeOut' }}
-          className="w-24 h-24 sm:w-44 sm:h-44 object-contain"
+          className="w-48 h-48 sm:w-44 sm:h-44 object-contain"
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-8 sm:pt-24 pb-12 sm:pb-16">
+      <div className="relative z-10 text-center px-3 sm:px-4 max-w-4xl mx-auto pt-3 sm:pt-20 pb-6 sm:pb-13">
         {/* Top emblem decoration */}
         <motion.div
           custom={0}
