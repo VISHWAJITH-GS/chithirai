@@ -122,8 +122,10 @@ export default function EventModal({ event, onClose }) {
               </div>
             </motion.div>
 
-            {/* Right details panel */}
-            <div className="max-h-[95svh] md:max-h-[90vh] overflow-y-auto px-5 md:px-7 py-6 md:py-7 space-y-5 pb-20 md:pb-7">
+            {/* Right details panel — flex column with floating button */}
+            <div className="flex flex-col h-full max-h-[95svh] md:max-h-[90vh]">
+              {/* Scrollable content */}
+              <div className="flex-1 overflow-y-auto px-5 md:px-7 py-6 md:py-7 space-y-5 pb-72 md:pb-24">
               <motion.div variants={sectionVariants}>
                 <h3 className="flex items-center gap-2 text-[#7B1E1E] font-bold text-base mb-3">
                   <span className="text-gold">◆</span> தலைப்புகள்
@@ -184,8 +186,10 @@ export default function EventModal({ event, onClose }) {
               )}
 
               <motion.div variants={sectionVariants} className="gold-divider" />
+              </div>
 
-              <motion.div variants={sectionVariants} className="sticky bottom-0 z-10 bg-gradient-to-t from-[#FFF5E1] via-[#FFF5E1] to-transparent pt-4 pb-6 md:pb-2 -mx-1 px-1 flex justify-center md:justify-start">
+              {/* Floating register button at bottom */}
+              <motion.div variants={sectionVariants} className="sticky bottom-0 z-10 bg-gradient-to-t from-[#FFF5E1] via-[#FFF5E1] to-transparent pt-4 pb-6 md:pb-4 px-5 md:px-7 border-t border-[#D4AF37]/20 flex justify-center md:justify-start">
                 <motion.a
                   href={event.formUrl}
                   target="_blank"
