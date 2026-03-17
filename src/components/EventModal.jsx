@@ -83,7 +83,7 @@ export default function EventModal({ event, onClose }) {
         onClick={onClose}
       >
         <motion.div
-          className="relative w-full max-w-5xl max-h-[90vh] overflow-hidden bg-[#FFF5E1] rounded-2xl shadow-2xl border-2 border-[#D4AF37]"
+          className="relative w-full max-w-5xl max-h-[95svh] md:max-h-[90vh] overflow-hidden bg-[#FFF5E1] rounded-2xl shadow-2xl border-2 border-[#D4AF37]"
           variants={modalVariants}
           initial="hidden"
           animate="visible"
@@ -92,13 +92,13 @@ export default function EventModal({ event, onClose }) {
         >
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 z-20 text-[#D4AF37] hover:text-white text-2xl leading-none w-9 h-9 flex items-center justify-center rounded-full bg-[#3E2723]/90 hover:bg-[#5A3A1B] transition-colors"
+            className="absolute top-3 right-3 md:top-4 md:right-4 z-20 text-[#D4AF37] hover:text-white text-2xl leading-none w-10 h-10 flex items-center justify-center rounded-full bg-[#3E2723]/90 hover:bg-[#5A3A1B] transition-colors"
             aria-label="Close"
           >
             ×
           </button>
 
-          <div className="grid md:grid-cols-[minmax(260px,0.92fr)_1fr] h-full max-h-[90vh]">
+          <div className="grid md:grid-cols-[minmax(260px,0.92fr)_1fr] h-full max-h-[95svh] md:max-h-[90vh]">
             {/* Left visual card panel */}
             <motion.div
               variants={sectionVariants}
@@ -123,7 +123,7 @@ export default function EventModal({ event, onClose }) {
             </motion.div>
 
             {/* Right details panel */}
-            <div className="max-h-[90vh] overflow-y-auto px-5 md:px-7 py-6 md:py-7 space-y-6">
+            <div className="max-h-[95svh] md:max-h-[90vh] overflow-y-auto px-5 md:px-7 py-6 md:py-7 space-y-5 pb-20 md:pb-7">
               <motion.div variants={sectionVariants}>
                 <h3 className="flex items-center gap-2 text-[#7B1E1E] font-bold text-base mb-3">
                   <span className="text-gold">◆</span> தலைப்புகள்
@@ -185,7 +185,7 @@ export default function EventModal({ event, onClose }) {
 
               <motion.div variants={sectionVariants} className="gold-divider" />
 
-              <motion.div variants={sectionVariants} className="flex justify-center md:justify-start pt-1">
+              <motion.div variants={sectionVariants} className="sticky bottom-0 bg-gradient-to-t from-[#FFF5E1] via-[#FFF5E1] to-transparent pt-3 pb-1 -mx-1 px-1 flex justify-center md:justify-start">
                 <motion.a
                   href={event.formUrl}
                   target="_blank"

@@ -13,8 +13,7 @@ const textVariants = {
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-transparent"
-      style={{ paddingTop: '80px' }} /* offset for fixed navbar */
+      className="relative min-h-[100svh] flex flex-col items-center justify-center overflow-hidden bg-transparent pt-20"
     >
       {/* Dot grid is intentionally scoped to Hero only */}
       <div
@@ -36,7 +35,7 @@ export default function Hero() {
       <div className="hero-gradient absolute inset-0 pointer-events-none" />
 
       {/* Logos container — centered at top */}
-      <div className="absolute top-12 left-1/2 -translate-x-1/2 z-10 flex items-center justify-center gap-6 sm:gap-10 pointer-events-none">
+      <div className="relative z-10 mt-4 sm:mt-0 sm:absolute sm:top-12 sm:left-1/2 sm:-translate-x-1/2 flex items-center justify-center gap-4 sm:gap-10 pointer-events-none">
         {/* Tamil Mandram logo */}
         <motion.img
           src="/assets/tamil-mandram-logo.png"
@@ -44,7 +43,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
-          className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+          className="w-12 h-12 sm:w-20 sm:h-20 object-contain"
         />
 
         {/* Sithirai logo — centered */}
@@ -54,12 +53,12 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6, ease: 'easeOut' }}
-          className="w-32 h-32 sm:w-44 sm:h-44 object-contain"
+          className="w-24 h-24 sm:w-44 sm:h-44 object-contain"
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto py-16">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-8 sm:pt-24 pb-12 sm:pb-16">
         {/* Top emblem decoration */}
         <motion.div
           custom={0}
@@ -101,7 +100,7 @@ export default function Hero() {
           <img
             src="/assets/tce-banner.png"
             alt="தியாகராசர் பொறியியல் கல்லூரி"
-            className="w-full max-w-3xl h-20 sm:h-24 object-cover object-center"
+            className="w-full max-w-[92vw] sm:max-w-3xl h-14 sm:h-24 object-contain sm:object-cover object-center"
           />
 
 
@@ -113,7 +112,7 @@ export default function Hero() {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-2"
+          className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-2"
         >
           <span className="text-shimmer">சித்திரை</span>
         </motion.h1>
@@ -164,7 +163,7 @@ export default function Hero() {
                 .getElementById('events')
                 ?.scrollIntoView({ behavior: 'smooth' })
             }
-            className="px-8 py-3.5 bg-[#D4AF37] text-[#3E2723] font-bold rounded-xl shadow-lg hover:bg-[#c9a530] transition-colors"
+            className="w-full sm:w-auto px-8 py-3.5 bg-[#D4AF37] text-[#3E2723] font-bold rounded-xl shadow-lg hover:bg-[#c9a530] transition-colors"
           >
             போட்டிகளை காண்க
           </motion.button>
@@ -177,7 +176,7 @@ export default function Hero() {
                 .getElementById('kaviarangam')
                 ?.scrollIntoView({ behavior: 'smooth' })
             }
-            className="px-8 py-3.5 border-2 border-[#3E2723] text-[#3E2723] font-bold rounded-xl hover:bg-[#3E2723] hover:text-[#D4AF37] transition-colors"
+            className="w-full sm:w-auto px-8 py-3.5 border-2 border-[#3E2723] text-[#3E2723] font-bold rounded-xl hover:bg-[#3E2723] hover:text-[#D4AF37] transition-colors"
           >
             கவியரங்கம்
           </motion.button>

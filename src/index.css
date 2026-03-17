@@ -87,9 +87,10 @@ body {
 .gallery-canvas-wrap {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 780px;
   overflow: hidden;
   cursor: grab;
+  touch-action: pan-y;
 }
 .gallery-canvas-wrap:active {
   cursor: grabbing;
@@ -123,7 +124,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
+}
+
+@media (max-width: 1024px) {
+  .gallery-canvas-wrap {
+    height: 620px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-canvas-wrap {
+    height: 460px;
+  }
 }
 
 /* ─── Kaviarangam timeline ─── */

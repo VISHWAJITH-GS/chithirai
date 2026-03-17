@@ -80,7 +80,7 @@ export default function EventsSection({ onEventClick }) {
               whileHover={{ scale: 1.08, y: -4 }}
               whileTap={{ scale: 0.96 }}
               transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-              className="flex items-center gap-4 px-8 py-4 bg-[#3E2723] text-[#FFF5E1] rounded-2xl border-2 border-[#D4AF37]/60 hover:border-[#D4AF37] hover:bg-[#5A3A1B] transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-[#D4AF37]/20"
+              className="w-full sm:w-auto sm:min-w-[320px] max-w-[420px] flex items-center justify-between gap-4 px-6 sm:px-8 py-4 bg-[#3E2723] text-[#FFF5E1] rounded-2xl border-2 border-[#D4AF37]/60 hover:border-[#D4AF37] hover:bg-[#5A3A1B] transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-[#D4AF37]/20"
             >
               {/* Ordinal dot */}
               <span className="w-8 h-8 rounded-full bg-[#D4AF37] text-[#3E2723] text-sm font-bold flex items-center justify-center shrink-0">

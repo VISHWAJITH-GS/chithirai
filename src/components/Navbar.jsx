@@ -17,6 +17,22 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!menuOpen) return undefined;
+
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') setMenuOpen(false);
+    };
+
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKeyDown);
+
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [menuOpen]);
+
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     setMenuOpen(false);
@@ -33,16 +49,16 @@ export default function Navbar() {
           : 'bg-[#3E2723]'
       } border-b-2 border-[#D4AF37]`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
         {/* Logo / Title */}
         <button
           onClick={() => scrollTo('hero')}
-          className="flex flex-col items-start leading-tight"
+          className="flex flex-col items-start leading-tight min-w-0"
         >
-          <span className="text-[#D4AF37] font-bold text-sm sm:text-base">
+          <span className="text-[#D4AF37] font-bold text-xs sm:text-base truncate max-w-[78vw] sm:max-w-none">
             தியாகராசர் பொறியியல் கல்லூரி (தன்னாட்சி )
           </span>
-          <span className="text-[#FFF5E1] text-xs opacity-80">
+          <span className="text-[#FFF5E1] text-[11px] sm:text-xs opacity-80 truncate max-w-[78vw] sm:max-w-none">
             தமிழ் மன்றம் &nbsp;·&nbsp; சித்திரை
           </span>
         </button>
@@ -65,8 +81,10 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen((p) => !p)}
-          className="md:hidden text-[#D4AF37] flex flex-col gap-1.5 p-1"
+          className="md:hidden text-[#D4AF37] flex flex-col gap-1.5 p-2"
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-nav-links"
         >
           <span
             className={`block w-6 h-0.5 bg-[#D4AF37] transition-all duration-300 ${
@@ -95,12 +113,12 @@ export default function Navbar() {
           transition={{ duration: 0.25 }}
           className="md:hidden bg-[#3E2723] border-t border-[#D4AF37]/30 overflow-hidden"
         >
-          <ul className="flex flex-col py-2">
+          <ul id="mobile-nav-links" className="flex flex-col py-2">
             {navLinks.map((link) => (
               <li key={link.id}>
                 <button
                   onClick={() => scrollTo(link.id)}
-                  className="w-full text-left px-6 py-3 text-[#FFF5E1] hover:text-[#D4AF37] hover:bg-[#5A3A1B]/40 transition-colors text-sm"
+                  className="w-full text-left px-6 py-3.5 text-[#FFF5E1] hover:text-[#D4AF37] hover:bg-[#5A3A1B]/40 transition-colors text-sm"
                 >
                   {link.label}
                 </button>

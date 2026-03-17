@@ -19,7 +19,7 @@ export default function App() {
       {/* Main Content */}
       <main>
         {/* Hero Section */}
-        <section id="hero">
+        <section id="hero" className="scroll-mt-24">
           <Hero />
         </section>
 
@@ -29,7 +29,7 @@ export default function App() {
         {/* About Section */}
         <section
           id="about"
-          className="py-14 px-4 max-w-3xl mx-auto text-center"
+          className="scroll-mt-24 py-14 px-4 max-w-3xl mx-auto text-center"
         >
           <p className="text-lg leading-9 text-[#5A3A1B] font-medium">
             தமிழின் செழுமையையும் மாணவர்களின் படைப்பாற்றலையும் வெளிப்படுத்தும்
@@ -56,7 +56,7 @@ export default function App() {
         <div className="gold-divider" />
 
         {/* Competitions Section */}
-        <section id="events">
+        <section id="events" className="scroll-mt-24">
           <EventsSection onEventClick={setSelectedEvent} />
         </section>
 
@@ -64,7 +64,7 @@ export default function App() {
         <div className="gold-divider" />
 
         {/* Kaviarangam Section */}
-        <section id="kaviarangam">
+        <section id="kaviarangam" className="scroll-mt-24">
           <Kaviarangam />
         </section>
 

@@ -125,6 +125,7 @@ export default function CircularGallery({
     gl.canvas.style.inset = '0';
     gl.canvas.style.width = '100%';
     gl.canvas.style.height = '100%';
+    gl.canvas.style.touchAction = 'pan-y';
 
     const camera = new Camera(gl, { fov: FOV, near: 0.1, far: 100 });
     camera.position.z = CAM_Z;
@@ -386,7 +387,6 @@ export default function CircularGallery({
     <div
       ref={containerRef}
       className="gallery-canvas-wrap select-none"
-      style={{ height: '780px' }}
     >
       {/* DOM text labels — positioned via JS projection */}
       {items.map((item, i) => (
