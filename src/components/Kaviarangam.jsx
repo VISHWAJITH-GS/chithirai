@@ -217,6 +217,23 @@ export default function Kaviarangam() {
         {/* Interactive timeline card */}
         <TimelineCard />
 
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.35, duration: 0.5 }}
+          className="mt-8 flex justify-center"
+        >
+          <a
+            href="https://forms.gle/Dc3VQpQMpyJqAUdE7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-[#D4AF37] text-[#3E2723] font-bold hover:bg-[#c9a530] transition-colors"
+          >
+            <span>கவியரங்கம் பதிவு</span>
+          </a>
+        </motion.div>
+
         {/* Bottom decoration */}
         <motion.div
           initial={{ opacity: 0 }}

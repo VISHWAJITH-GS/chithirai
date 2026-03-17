@@ -23,7 +23,7 @@ const eventsData = [
       "மேற்கோள்",
       "வாக்கிய அமைப்பு",
     ],
-    formUrl: "#",
+    formUrl: "https://forms.gle/6xg6Hq6sTByMCCJ46",
     image: "/assets/essay.png",
   },
   {
@@ -47,7 +47,7 @@ const eventsData = [
       "பேச்சு அமைப்பு",
       "அவையோர் ஈர்ப்பு",
     ],
-    formUrl: "#",
+    formUrl: "https://forms.gle/sFVKb9imh4qajK3C6",
     image: "/assets/speech.png",
   },
   {
@@ -69,7 +69,7 @@ const eventsData = [
       "வேகம்",
       "குழு ஒத்துழைப்பு",
     ],
-    formUrl: "#",
+    formUrl: "https://forms.gle/K1f8Z9DcmpDm5vxq6",
     image: "/assets/quiz.png",
   },
   {
@@ -95,7 +95,7 @@ const eventsData = [
       "எழுத்துப் பிழையின்மை – 5 மதிப்பெண்கள்",
       "கவிதை நடை – 5 மதிப்பெண்கள்",
     ],
-    formUrl: "#",
+    formUrl: "https://forms.gle/GDr9MxHZCVhqgkEz9",
     image: "/assets/poetry.png",
   },
 ];

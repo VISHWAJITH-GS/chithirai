@@ -295,7 +295,7 @@ export default function CircularGallery({
       const dir = Math.sign(e.deltaY);
       if (!dir) return false;
 
-      const delta = dir * SPACING * 0.6;
+      const delta = dir * SPACING * 0.35;
       const currentTarget = targetScrollRef.current;
       const nextTarget = currentTarget - delta;
       const half = ((items.length - 1) * SPACING) / 2;
@@ -321,7 +321,7 @@ export default function CircularGallery({
 
     const onPointerMove = (e) => {
       if (!isDragging) return;
-      const delta = (e.clientX - dragStartClientX) * 0.012 * SPACING;
+      const delta = (e.clientX - dragStartClientX) * 0.008 * SPACING;
       targetScrollRef.current = clampScroll(dragStartScroll + delta);
     };
 
