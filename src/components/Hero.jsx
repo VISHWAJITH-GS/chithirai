@@ -58,7 +58,7 @@ export default function Hero() {
 
         {/* Sithirai logo — centered */}
         <motion.img
-          src="/assets/sithirai-white-bg-logo.png"
+          src="/assets/sithirai-logo.png"
           alt="சித்திரை"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
