@@ -96,7 +96,7 @@ export default function Hero() {
           animate="visible"
           className="text-[#5A3A1B] text-sm sm:text-base font-semibold tracking-[0.15em] uppercase mb-2"
         >
-          சிருட்டி கலை குழுமம் நடத்தும்
+          சிருட்டி கலைக் குழுமம் நடத்தும்
         </motion.p>
 
         {/* College banner — full-width, blends with background */}
