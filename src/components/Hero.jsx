@@ -86,7 +86,7 @@ export default function Hero() {
           animate="visible"
           className="text-[#5A3A1B] text-sm sm:text-base font-semibold tracking-[0.15em] uppercase mb-2"
         >
-          TCE சிருட்டி கலை குழுமம் நடத்தும்
+          சிருட்டி கலை குழுமம் நடத்தும்
         </motion.p>
 
         {/* College banner — full-width, blends with background */}
@@ -114,7 +114,7 @@ export default function Hero() {
           animate="visible"
           className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-2"
         >
-          <span className="text-shimmer">சித்திரை சாரல்</span>
+          <span className="text-shimmer">சித்திரைச் சாரல்</span>
         </motion.h1>
 
         <motion.p
@@ -124,7 +124,7 @@ export default function Hero() {
           animate="visible"
           className="text-[#7B1E1E] text-base sm:text-lg font-bold mb-3"
         >
-          நிகழ்வு தேதி: 08 ஏப்ரல் 2026
+          நிகழ்வு தேதி: 20.04.26
         </motion.p>
 
         {/* Decorative gold rule */}

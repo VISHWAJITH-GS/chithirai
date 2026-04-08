@@ -46,6 +46,14 @@ export default function EventsSection({ onEventClick }) {
             போட்டியை தேர்வு செய்து கிளிக் செய்யுங்கள் — விதிமுறைகள் மற்றும் பதிவு
             செய்வதற்கான பக்கம் திறக்கும்.
           </p>
+
+          <div className="mt-4 inline-flex items-center gap-2 rounded-xl border-2 border-[#D4AF37] bg-[#FFF5E1] px-4 py-2.5 shadow-md">
+            <span className="text-[#7B1E1E] text-base">★</span>
+            <p className="text-[#7B1E1E] text-sm sm:text-base font-bold leading-6 text-left">
+              அனைத்து பங்கேற்பாளர்களுக்கும் E-Certificate வழங்கப்படும்;
+              வெற்றியாளர்களுக்கு பரிசு வழங்கப்படும்.
+            </p>
+          </div>
         </motion.div>
 
         {/* WebGL gallery */}
