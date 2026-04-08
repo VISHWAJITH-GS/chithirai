@@ -151,15 +151,24 @@ export default function EventModal({ event, onClose }) {
                 </h3>
                 <ul className="space-y-2">
                   {event.rules.map((rule, i) => (
+                    (() => {
+                      const isFeeRule = rule.includes('பதிவு கட்டணம்');
+                      return (
                     <li
                       key={i}
-                      className="flex items-start gap-2 text-[#3E2723] text-sm leading-7"
+                      className={`flex items-start gap-2 text-sm leading-7 ${
+                        isFeeRule
+                          ? 'font-bold text-[#7B1E1E] bg-[#D4AF37]/20 border border-[#D4AF37]/60 rounded-lg px-2 py-1'
+                          : 'text-[#3E2723]'
+                      }`}
                     >
                       <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#3E2723] text-[#D4AF37] text-xs font-bold shrink-0 mt-0.5">
                         {i + 1}
                       </span>
                       <span>{rule}</span>
                     </li>
+                      );
+                    })()
                   ))}
                 </ul>
               </motion.div>

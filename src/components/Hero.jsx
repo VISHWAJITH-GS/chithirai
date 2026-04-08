@@ -36,6 +36,16 @@ export default function Hero() {
 
       {/* Logos container — centered at top */}
       <div className="relative z-10 mt-1 sm:mt-0 sm:absolute sm:top-12 sm:left-1/2 sm:-translate-x-1/2 flex items-center justify-center gap-0 sm:gap-10 pointer-events-none">
+        {/* Shrishti logo */}
+        <motion.img
+          src="/assets/shrishti-logo.png"
+          alt="Shrishti logo"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.15, duration: 0.6, ease: 'easeOut' }}
+          className="w-28 h-28 sm:w-24 sm:h-24 object-cover object-center rounded-full scale-[1.22]"
+        />
+
         {/* Tamil Mandram logo */}
         <motion.img
           src="/assets/tamil-mandram-logo.png"
@@ -43,7 +53,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
-          className="w-24 h-24 sm:w-20 sm:h-20 object-contain"
+          className="w-24 h-24 sm:w-20 sm:h-20 object-cover rounded-full border-2 border-[#D4AF37]"
         />
 
         {/* Sithirai logo — centered */}

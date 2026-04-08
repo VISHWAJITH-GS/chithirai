@@ -59,7 +59,7 @@ export default function Navbar() {
             தியாகராசர் பொறியியல் கல்லூரி (தன்னாட்சி )
           </span>
           <span className="text-[#FFF5E1] text-[11px] sm:text-xs opacity-80 truncate max-w-[78vw] sm:max-w-none">
-            TCE சிருட்டி கலை குழுமம் &nbsp;·&nbsp; சித்திரைச் சாரல்
+            தமிழ் மன்றம் &nbsp;·&nbsp; சித்திரைச் சாரல்
           </span>
         </button>
 

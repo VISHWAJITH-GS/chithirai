@@ -1,4 +1,4 @@
-// eventsData.js – TCE சிருட்டி கலை குழுமம் – சித்திரைச் சாரல்
+// eventsData.js – தமிழ் மன்றம் – சித்திரைச் சாரல்
 
 const eventsData = [
   {
