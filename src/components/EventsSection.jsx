@@ -43,8 +43,8 @@ export default function EventsSection({ onEventClick }) {
           </div>
 
           <p className="text-[#5A3A1B]/70 text-sm mt-4 max-w-lg mx-auto leading-7">
-            போட்டியை தேர்வு செய்து கிளிக் செய்யுங்கள் — விதிகள் மற்றும் பதிவு
-            செய்வதற்கான கட்டம் திறக்கும்.
+            போட்டியை தேர்வு செய்து கிளிக் செய்யுங்கள் — விதிமுறைகள் மற்றும் பதிவு
+            செய்வதற்கான பக்கம் திறக்கும்.
           </p>
         </motion.div>
 

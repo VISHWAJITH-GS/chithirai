@@ -86,7 +86,7 @@ export default function Hero() {
           animate="visible"
           className="text-[#5A3A1B] text-sm sm:text-base font-semibold tracking-[0.15em] uppercase mb-2"
         >
-          TCE சிருட்டி கலைக் குழுமம் தமிழ் மன்றம் நடத்தும்
+          TCE சிருட்டி கலை குழுமம் நடத்தும்
         </motion.p>
 
         {/* College banner — full-width, blends with background */}
@@ -114,8 +114,18 @@ export default function Hero() {
           animate="visible"
           className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-2"
         >
-          <span className="text-shimmer">சித்திரை</span>
+          <span className="text-shimmer">சித்திரை சாரல்</span>
         </motion.h1>
+
+        <motion.p
+          custom={3.5}
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          className="text-[#7B1E1E] text-base sm:text-lg font-bold mb-3"
+        >
+          நிகழ்வு தேதி: 08 ஏப்ரல் 2026
+        </motion.p>
 
         {/* Decorative gold rule */}
         <motion.div
@@ -141,10 +151,10 @@ export default function Hero() {
           தியாகராசர் பொறியியல் கல்லூரி, மதுரை – 625015
           <br />
           <span className="text-[#7B1E1E] font-semibold">
-            காலை 10:00 – மதியம் 12:00
+            காலை 9:00 – மதியம் 1:00
           </span>
           &nbsp;|&nbsp;
-          <span className="text-[#5A3A1B]">பிற கல்லூரி மாணவர்கள்</span>
+          <span className="text-[#5A3A1B]">கல்லூரி மாணவர்கள்</span>
         </motion.p>
 
         {/* CTA Buttons */}

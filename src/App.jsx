@@ -35,11 +35,11 @@ export default function App() {
             தமிழின் செழுமையையும் மாணவர்களின் படைப்பாற்றலையும் வெளிப்படுத்தும்
             நோக்கில் தியாகராசர் பொறியியல் கல்லூரி{' '}
             <span className="text-gold font-bold">
-              சிருட்டி கலைக் குழுமம் தமிழ் மன்றம்
+              TCE சிருட்டி கலை குழுமம்
             </span>{' '}
-            சார்பில் &ldquo;சித்திரை&rdquo; நடத்தப்படுகிறது. இந்நிகழ்வில்
-            மாணவர்களின் தமிழ்த்திறமைகளை வெளிப்படுத்த பல்வேறு போட்டிகள்
-            மற்றும் கவியரங்கம் நடைபெறும்.
+            சார்பில் &ldquo;சித்திரை சாரல்&rdquo; நடத்தப்படுகிறது. இந்நிகழ்வு
+            கல்லூரி மாணவர்களுக்காக நடத்தப்படும் தமிழ் திறன் போட்டிகளின்
+            தொகுப்பாகும்.
           </p>
 
           {/* Decorative kolam dots */}
@@ -78,14 +78,26 @@ export default function App() {
             ))}
           </div>
           <p className="text-gold font-bold text-lg mb-1">
-            சித்திரை
+            சித்திரை சாரல்
           </p>
           <p className="text-sm text-[#ccc] mb-2">
-            TCE சிருட்டி கலைக் குழுமம் தமிழ் மன்றம்
+            TCE சிருட்டி கலை குழுமம்
           </p>
           <p className="text-xs text-[#aaa]">
             தியாகராசர் பொறியியல் கல்லூரி, மதுரை – 625015
           </p>
+
+          <div className="mt-6 border-t border-[#D4AF37]/30 pt-5 max-w-xl mx-auto">
+            <p className="text-[#D4AF37] font-semibold text-base mb-2">
+              For Further Details
+            </p>
+            <p className="text-sm text-[#ddd]">
+              Student Coordinator: Vignesh S - +91 98765 43210
+            </p>
+            <p className="text-sm text-[#ddd]">
+              Student Coordinator: Keerthana R - +91 91234 56789
+            </p>
+          </div>
         </footer>
       </main>
 
