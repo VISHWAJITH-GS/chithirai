@@ -117,7 +117,7 @@ export default function Hero() {
           animate="visible"
           className="text-[#7B1E1E] text-base sm:text-lg font-bold mb-3"
         >
-          நிகழ்வு தேதி: 20.04.26
+          நிகழ்வு தேதி: 20.04.2026
         </motion.p>
 
         {/* Decorative gold rule */}
