@@ -35,7 +35,7 @@ export default function Hero() {
       <div className="hero-gradient absolute inset-0 pointer-events-none" />
 
       {/* Logos container — centered at top */}
-      <div className="relative z-10 mt-1 sm:mt-0 sm:absolute sm:top-12 sm:left-1/2 sm:-translate-x-1/2 flex items-center justify-center gap-0 sm:gap-10 pointer-events-none">
+      <div className="relative z-10 mt-1 sm:mt-0 mb-0 flex items-center justify-center gap-0 sm:gap-10 pointer-events-none">
         {/* Shrishti logo */}
         <motion.img
           src="/assets/shrishti-logo.png"
@@ -68,40 +68,11 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-3 sm:px-4 max-w-4xl mx-auto pt-3 sm:pt-20 pb-6 sm:pb-13">
-        {/* Top emblem decoration */}
-        <motion.div
-          custom={0}
-          variants={textVariants}
-          initial="hidden"
-          animate="visible"
-          className="flex justify-center gap-5 mb-6"
-        >
-          {['. ', '. ', '. '].map((sym, i) => (
-            <span
-              key={i}
-              className="text-gold text-2xl animate-gold-pulse"
-              style={{ animationDelay: `${i * 0.4}s` }}
-            >
-              {sym}
-            </span>
-          ))}
-        </motion.div>
-
-        {/* Organisation name */}
-        <motion.p
-          custom={1}
-          variants={textVariants}
-          initial="hidden"
-          animate="visible"
-          className="text-[#5A3A1B] text-sm sm:text-base font-semibold tracking-[0.15em] uppercase mb-2"
-        >
-          சிருட்டி கலைக் குழுமம் நடத்தும்
-        </motion.p>
+      <div className="relative z-10 text-center px-3 sm:px-4 max-w-4xl mx-auto pt-0 pb-6 sm:pb-13">
 
         {/* College banner — full-width, blends with background */}
         <motion.div
-          custom={2}
+          custom={1}
           variants={textVariants}
           initial="hidden"
           animate="visible"
@@ -114,6 +85,18 @@ export default function Hero() {
           />
 
 
+        </motion.div>
+
+        {/* Organisation name */}
+        <motion.div
+          custom={2}
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          className="text-[#5A3A1B] text-sm sm:text-base font-semibold tracking-[0.15em] uppercase mb-2"
+        >
+          <p>சிருட்டி கலைக்குழுமம்</p>
+          <p>தமிழ் மன்றம் நடத்தும்</p>
         </motion.div>
 
         {/* Main title */}
