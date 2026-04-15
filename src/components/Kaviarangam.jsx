@@ -7,13 +7,13 @@ import {
 import { useRef } from 'react';
 
 const scheduleItems = [
-  { time: '2:00', label: 'தமிழ்த்தாய் வாழ்த்து' },
-  { time: '2:05', label: 'முதல்வர் உரை' },
-  { time: '2:15', label: 'வரவேற்புரை' },
-  { time: '2:25', label: 'விருந்தினர் உரை' },
-  { time: '2:50', label: 'மேடை கவிதை வாசிப்பு' },
-  { time: '3:30', label: 'பரிசளிப்பு' },
-  { time: '3:50', label: 'நன்றியுரை' },
+  { time: '1:30', label: 'தமிழ்த்தாய் வாழ்த்து' },
+  { time: '1:35', label: 'முதல்வர் உரை' },
+  { time: '1:45', label: 'வரவேற்புரை' },
+  { time: '1:55', label: 'விருந்தினர் உரை' },
+  { time: '2:20', label: 'மேடை கவிதை வாசிப்பு' },
+  { time: '2:40', label: 'பரிசளிப்பு' },
+  { time: '2:55', label: 'நன்றியுரை' },
 ];
 
 const containerVariants = {
@@ -208,7 +208,7 @@ export default function Kaviarangam() {
               </svg>
               <span className="text-sm font-medium">
                 நேரம் :{' '}
-                <span className="text-[#D4AF37]">2:00 – 4:00</span>
+                <span className="text-[#D4AF37]">1:30 PM – 3:00 PM</span>
               </span>
             </div>
           </div>
